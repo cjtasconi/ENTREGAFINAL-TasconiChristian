@@ -1,0 +1,70 @@
+.cover__conteiner {
+  display: inline-block;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 8px;
+  background: rgb(212,239,250);
+  background: linear-gradient(45deg, rgba(212,239,250,1) 0%, rgba(255,249,242,1) 50%, rgba(251,233,213,1) 70%, rgba(113,155,173,1) 100%);
+  background-size: 300%;
+  background-position: left;
+  animation: cover-animation 15s infinite alternate;
+    & h2{
+  margin: 0 auto;
+  color: $color-font;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 1.3rem;
+  font-weight: 100;
+  }
+}
+
+@keyframes cover-animation {
+  0% {background-position: left;
+  }
+  100% {background-position: right;
+  }
+}
+
+
+/*/////FOR > 480px/////*/
+
+@media screen and (min-width: 480px) {
+
+.cover__conteiner {
+  margin-top: 4px;
+  }
+
+.cover {
+  height: 24vh;
+  background-image: url("../assets/portadabasica.jpg");
+  background-size:cover;
+  background-position:top;
+  animation: none;
+    &:hover {  
+    box-shadow:$shadow;
+    background-position:bottom;
+    transition: 4s;
+    }
+  }
+.cover h2 {
+  color:$color-tarjetas;  
+  text-shadow: $color-font 0px 0px 5px;
+  font-size: 30px;
+  }
+}
+
+
+@media screen and (min-width: 800px) {
+.cover h2 {
+  font-size: 45px;
+  }
+}

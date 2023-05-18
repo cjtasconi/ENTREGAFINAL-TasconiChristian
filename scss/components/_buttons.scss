@@ -1,0 +1,31 @@
+@mixin botonshowroom {
+.conteiner__botonShowroom{
+  display: flex;
+  justify-content: center;
+  }
+
+.botonShowroom{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:$color-celeste;
+  height: 3em;
+  width: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin: 16px;
+  border-radius: 8px;
+    & a {
+    text-decoration: none;
+    color:$color-font;
+    font-size: 16px;
+    font-weight: 800;
+    }
+  }
+
+.botonShowroom:hover{
+  transition: 1s;
+  background-color: $color-azul;
+  box-shadow: $shadow;
+  }
+}

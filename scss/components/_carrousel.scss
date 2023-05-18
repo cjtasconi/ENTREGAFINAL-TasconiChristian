@@ -1,0 +1,41 @@
+@mixin slider__conteiner {
+
+.slider-conteiner {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    height: 100%;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    border-radius: 8px;
+    scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
+        &:hover{
+        box-shadow: $shadow;
+        transition: 1s;
+        }
+    }
+
+
+.slider-conteiner img {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    }
+}      
+
+
+
+
+//For > 420px
+
+@mixin slider__conteiner420 {
+    .slider-conteiner {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    }
+}

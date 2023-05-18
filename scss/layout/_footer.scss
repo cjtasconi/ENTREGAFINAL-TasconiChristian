@@ -1,0 +1,43 @@
+//Footer mobile
+
+.footer {
+  background-color:$color-font;
+  margin:0;
+    &__list {
+    padding: 0 1em;
+      a {
+      list-style: none;
+      font-size: 1em;
+      font-weight: 400;
+      color:$color-tarjetas;
+      text-decoration: none;
+    }
+  }
+}
+
+.footer__avisoslegales {
+  font-size: 1em;
+  font-weight: 400;
+  color:$color-tarjetas;
+  text-decoration: none;}
+
+.footer__textoLegales {
+  text-align: justify;
+  font-size: 0.7em;
+  font-weight: 100;
+  color:$color-tarjetas;
+}
+
+
+//Footer > 420px
+
+@media screen and (min-width:420px) {
+
+.footer {
+  display: flex;
+  justify-content: center;
+    &__list {
+    width: 80%;
+  }
+}
+}

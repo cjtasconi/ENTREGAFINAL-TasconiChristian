@@ -1,0 +1,52 @@
+.article__remeras {
+  @include cardcover;
+  background-image: url(../assets/remerablanca1.jpg);
+}
+
+.article__pantalones {
+  @include cardcover;
+  background-image: url(../assets/pantalonmarron1.jpeg);
+}
+
+.article__accesorios {
+  @include cardcover;
+  background-image: url(../assets/buzo1.jpg);
+}
+
+
+@media screen and (min-width: 480px){
+
+  .article__remeras {
+    @include cardcover480;
+    background-image: url(../assets/remerablanca1.jpg);
+  }
+  
+  .article__pantalones {
+    @include cardcover480;
+    background-image: url(../assets/pantalonmarron1.jpeg);
+  }
+  
+  .article__accesorios {
+    @include cardcover480;
+    background-image: url(../assets/buzo1.jpg);
+  }
+}
+
+
+@media screen and (min-width: 720px){
+
+  .article__remeras {
+    @include cardcover720;
+    background-image: url(../assets/remerablanca1.jpg);
+  }
+  
+  .article__pantalones {
+    @include cardcover720;
+    background-image: url(../assets/pantalonmarron1.jpeg);
+  }
+  
+  .article__accesorios {
+    @include cardcover720;
+    background-image: url(../assets/buzo1.jpg);
+  }
+}

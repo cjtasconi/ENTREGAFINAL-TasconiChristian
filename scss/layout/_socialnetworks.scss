@@ -1,0 +1,41 @@
+//For mobile
+.socialNetworks__conteiner{
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 44px;
+  background-color:$color-azul;
+  margin-top: 10px;
+    & a{
+    color:$color-tarjetas;
+    text-decoration: none;
+    font-size: 0;
+  }
+}
+
+.socialNetworks__conteiner i{
+  font-size: 24px;
+  color:$color-tarjetas;
+  text-decoration: none;
+}
+
+.socialNetworks__conteiner li{
+  list-style: none;
+  line-height: 0;
+}
+
+//For > 480px
+@media screen and (min-width: 480px) {
+
+.socialNetworks__conteiner{
+  height: 40px;
+  justify-content: center;
+  gap: 2rem;
+    & a, i{
+    font-size: 20px;
+    font-weight: 400;
+    color: $color-font;
+    }
+  }
+}
